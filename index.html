@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,65 @@
 
     <!--Bootstrap link-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
         <div class="row">
             <div class="col" id="heading">
-                <h1><i>https://images.app.goo.gl/A1qmzHNbJ78Fp9yV7</i>New York Times Search</h1>
+                <h1><i src="https://images.app.goo.gl/A1qmzHNbJ78Fp9yV7"></i src></i>New York Times Search</h1>
             </div>
         </div>
-        <div>
+        <div class="row">
+            <div id="bodycontainer">
+                <div class="col">
+                    <div class="row" id="searchparameters">
+                        <h3>Search Parameters</h3>
+                    </div>
+                    <div>    
+                        <input type="text" class="inputs">
+                    </div>
+
+                    <div class="row">
+                        <h3>Search Term: </h3>
+                    </div>
+                    <div>    
+                        <input type="text" class="inputs">
+                    </div>
+
+                    <div class="row">
+                        <h3>Number of Records to Retrieve: </h3>
+                    </div>
+                    <div>
+                        <input type="text" class="inputs">
+                    </div>
+
+                    <div class="row">
+                        <h3>Start Year (Optional): </h3>
+                    </div>
+                    <div>
+                        <input type="text" class="inputs">
+                    </div>
+
+                    <div class="row">
+                        <h3>End Year (Optional): </h3>
+                    </div>
+                    <div>
+                        <input type="text" class="inputs">
+                    </div>
+
+                    <div class="row">
+                        <button id="searchBtn">Search</button>
+                        <button id="clearBtn">Clear Results</button>
+                    </div>
+
+                </div>
+
+
+            </div>
 
         </div>
 
@@ -28,6 +77,9 @@
 
 
 
-    </div> <!--end of container div-->
+    </div>
+    <!--end of container div-->
+    <script src="script.js"></script>
 </body>
+
 </html>
